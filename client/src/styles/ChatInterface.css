@@ -1,0 +1,57 @@
+.chat-interface {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+
+
+
+  .header {
+    background-color: #075e54;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .app-logo {
+    height: 40px;
+    width: auto;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .header button {
+    background-color: #128c7e;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: 15px;
+  }
+  
+  .content {
+    display: flex;
+    height: calc(100% - 60px);
+  }
+  
+  .empty-chat {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+    font-size: 1.2em;
+    color: #54656f;
+  }
