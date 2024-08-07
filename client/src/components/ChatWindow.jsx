@@ -32,7 +32,7 @@ function ChatWindow({ messages, selectedUser, currentUser, sendMessage, socket }
 
   return (
     <div className="chat-window">
-      <h2>Chat with {selectedUser}</h2>
+      <h2>{selectedUser}</h2>
       <div className="messages">
         {messages.map((msg) => (
           <div key={msg.id} className={`message ${msg.from === currentUser ? 'sent' : 'received'}`}>
