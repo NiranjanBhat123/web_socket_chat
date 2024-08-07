@@ -51,7 +51,7 @@ io.on('connection', (socket) => {
     }
     messages.get(to).get(from).push(newMessage);
 
-    // Send message only to sender and recipient
+    
     socket.emit('newMessage', newMessage);
     const recipientSocket = Array.from(io.sockets.sockets.values()).find(
       (s) => users.get(s.id) === to
